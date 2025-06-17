@@ -3,20 +3,16 @@
 ## Installation
 
 ```bash
-# 1. Clone repository
-git clone <repository-url>
-cd tokoriko
-
-# 2. Install dependencies
+# 1. Install dependencies
 composer install
 npm install
 
-# 3. Environment setup
+# 2. Environment setup in your terminal
 cp .env.example .env
+php artisan key:generate
 
-# 4. Database setup (edit .env for your database)
+# 3. Database setup (edit .env for your database)
 php artisan migrate
-php artisan storage:link
 ```
 
 ## Running
